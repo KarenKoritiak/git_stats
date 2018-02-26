@@ -1,0 +1,7 @@
+#!/usr/bin/env ruby
+
+require 'git_stats'
+
+puts GitStats.new.git_stats(
+  owner: ARGV[0], repository: ARGV[1]
+)
